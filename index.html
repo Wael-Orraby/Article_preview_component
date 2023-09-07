@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Article preview component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="article-container">
+      <div class="article-image">
+        <img src="./images/drawers.jpg" alt="Article image" />
+      </div>
+
+      <div class="article-text">
+        <h2>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h2>
+        <p>
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="publisher-container">
+          <div class="publisher">
+            <img src="./images/My_Photo.jpg" alt="publisher image" />
+            <p>Wael Orraby</p>
+          </div>
+          <div class="share-btn">
+            <ul>
+              <div>
+                <li>SHARE</li>
+                <li>
+                  <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+                </li>
+                <li>
+                  <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+                </li>
+                <li>
+                  <img src="./images/icon-pinterest.svg" alt="icon-pinterest" />
+                </li>
+              </div>
+              <li class="share-btn list"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.frontendmentor.io/profile/Wael-Orraby"
+        target="_blank"
+        >Wael Orraby</a
+      >.
+    </div>
+    <script>
+      document.querySelectorAll(".share-btn").forEach((e) => {
+        e.onclick = () => {
+          document.querySelector("ul").classList.toggle("display");
+        };
+      });
+    </script>
+  </body>
+</html>
